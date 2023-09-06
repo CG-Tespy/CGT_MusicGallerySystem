@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using TMPro;
 
 namespace CGT.MusicGallery
 {
@@ -31,6 +32,7 @@ namespace CGT.MusicGallery
 
         [SerializeField] protected bool isLocked;
         [SerializeField] protected AudioClip audioClip;
+        
         [SerializeField] protected SongButtonController buttonPrefab;
 
         /// <summary>

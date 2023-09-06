@@ -2,6 +2,10 @@
 Nid
 
 ~Graphics~
-RR Studio
-astr999
+Blackhammer
+Kronbits
 
+~Fonts~
+Tanya Cherkiz
+David Rakowski
+Google

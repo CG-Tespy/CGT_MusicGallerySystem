@@ -14,6 +14,8 @@ namespace CGT.MusicGallery
         [SerializeField] protected TextMeshProUGUI textField;
         [SerializeField] protected SongInfoType whatToDisplay = SongInfoType.Null;
         
+        public virtual SongInfoType WhatToDisplay { get { return whatToDisplay; } }
+
         public override void Refresh()
         {
             string textToDisplay = "";
@@ -84,5 +86,6 @@ namespace CGT.MusicGallery
                 valueCache[SongInfoType.LockBasedName] = Song.UnlockName;
             }
         }
+    
     }
 }
