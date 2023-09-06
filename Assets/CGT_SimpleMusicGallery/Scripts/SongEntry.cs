@@ -58,6 +58,22 @@ namespace CGT.MusicGallery
         public virtual AudioClip AudioClip { get { return audioClip; } }
         public virtual SongButtonController ButtonPrefab { get { return buttonPrefab; } }
         
+        public enum InfoType
+        {
+            Null,
+
+            Artists,
+
+            LockBasedComments,
+            UnlockComments,
+            LockComments,
+
+            LockBasedName,
+            UnlockName,
+            LockName,
+
+            IsLocked,
+        }
 
     }
 }

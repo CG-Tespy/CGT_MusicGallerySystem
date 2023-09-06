@@ -3,14 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using ButtonClick = UnityEngine.UI.Button.ButtonClickedEvent;
-using TMPro;
 
 namespace CGT.MusicGallery
 {
     public class SongButtonController : MonoBehaviour
     {
         [SerializeField] protected SongEntry song;
-        [SerializeField] protected TextMeshProUGUI nameLabel;
         [SerializeField] protected Button button;
 
         public virtual SongEntry Song
@@ -19,29 +17,34 @@ namespace CGT.MusicGallery
             set 
             { 
                 song = value;
-                UpdateNameDisplays();
-            }
-        }
-
-        protected virtual void UpdateNameDisplays()
-        {
-            string nameToGoWith = string.Empty;
-            if (song != null)
-            {
-                if (song.IsLocked)
-                    nameToGoWith = song.UnlockName;
-                else
-                    nameToGoWith = song.LockName;
-
                 this.gameObject.name = $"{song.name}_Button";
+                UpdateViewList();
+                UpdateViewStates();
             }
-
-            nameLabel.text = nameToGoWith;
         }
-        
+
+        protected virtual void UpdateViewList()
+        {
+            views.Clear();
+            var whatWeFound = GetComponentsInChildren<IView>();
+            views.AddRange(whatWeFound);
+        }
+
+        protected List<IView> views = new List<IView>();
+
+        protected virtual void UpdateViewStates()
+        {
+            foreach (var registered in views)
+            {
+                registered.Song = this.Song;
+                registered.Refresh();
+            }
+        }
+
         protected virtual void OnEnable()
         {
-            UpdateNameDisplays();
+            UpdateViewList();
+            UpdateViewStates();
             OnClick.AddListener(ResponseToClick);
         }
 
@@ -52,7 +55,8 @@ namespace CGT.MusicGallery
 
         protected virtual void ResponseToClick()
         {
-            UpdateNameDisplays();
+            UpdateViewList();
+            UpdateViewStates();
             AnyClicked.Invoke(song);
         }
 
