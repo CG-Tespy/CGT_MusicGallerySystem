@@ -2,18 +2,21 @@ using UnityEngine;
 
 namespace CGT.MusicGallery
 {
-    [RequireComponent(typeof(AudioSource))]
     public class MusicPlayer : MonoBehaviour
     {
         [SerializeField] protected SongEntry startingSong;
+        [SerializeField] protected AudioSource audioSource;
         [SerializeField] protected bool playStartingSong;
 
         protected virtual void Awake()
         {
-            audioSource = GetComponent<AudioSource>();
+            if (audioSource == null)
+            {
+                audioSource = gameObject.AddComponent<AudioSource>();
+                audioSource.volume = 0.1f;
+                audioSource.loop = true;
+            }
         }
-
-        protected AudioSource audioSource;
 
         public virtual void Init()
         {

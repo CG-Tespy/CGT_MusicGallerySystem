@@ -10,7 +10,13 @@ namespace CGT.MusicGallery
     /// </summary>
     public class MusicGallery : MonoBehaviour
     {
+        [Tooltip("Entries that will be loaded from the specified subfolders below")]
         [SerializeField] protected List<SongEntry> songs = new List<SongEntry>();
+
+        [Tooltip("Names of the folders within the Resources folder to load SongEntries from")]
+        [SerializeField] protected string[] folderNames = new string[] { "SongEntry_BGM" };
+
+        public virtual IList<string> FolderNames { get { return folderNames; } }
 
         protected virtual void Awake()
         {
@@ -63,7 +69,19 @@ namespace CGT.MusicGallery
 
         protected virtual void Start()
         {
+            songs.Clear(); // We want to ignore whatever's set in the Inspector
+            FetchSongEntries();
             InitSubmodules();
+        }
+
+        protected virtual void FetchSongEntries()
+        {
+            IList<SongEntry> songsFound;
+            foreach (var folder in folderNames)
+            {
+                songsFound = Resources.LoadAll<SongEntry>(folder);
+                songs.AddRange(songsFound);
+            }
         }
 
         protected virtual void InitSubmodules()

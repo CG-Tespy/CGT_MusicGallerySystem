@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   artists:
   - Nid
-  unlockComments: <placeholder>
-  lockComments: <placeholder>
-  unlockName: <placeholder>
-  lockName: <placeholder>
+  unlockComments: Unlock comments placeholder here
+  lockComments: Lock comments placeholder here
+  unlockName: A Small Adventure
+  lockName: Lock name placeholder here
   isLocked: 0
-  audioClip: {fileID: 0}
-  buttonPrefab: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: af5bcae0fc624d142b65d598149461f9, type: 3}
+  buttonPrefab: {fileID: -9221695842433191230, guid: 85727f792de73524aaa13fd1fe889e3d, type: 3}

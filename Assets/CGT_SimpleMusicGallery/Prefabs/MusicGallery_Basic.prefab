@@ -607,18 +607,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc8c67f56b0f90a41b8f1d33fa879a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  songs:
-  - {fileID: 11400000, guid: 3858a7930cb09e84cbcc65dd53954d47, type: 2}
-  - {fileID: 11400000, guid: 7461c9f62b0638249b453f872818720b, type: 2}
-  - {fileID: 11400000, guid: bf92a58c435f2fd488a0569708c6d41f, type: 2}
-  - {fileID: 11400000, guid: ff34831aff671844da26946f5524822c, type: 2}
-  - {fileID: 11400000, guid: 54d20473bec9df940b59dff43387916d, type: 2}
-  - {fileID: 11400000, guid: 339306f05d709b148badcdd7c6496319, type: 2}
-  - {fileID: 11400000, guid: 66bf5450cfb255b498f3017989c4f379, type: 2}
-  - {fileID: 11400000, guid: a5e17012008b6934292a952a666d99d7, type: 2}
-  - {fileID: 11400000, guid: 08fa915bdbf3da848ac4acbb3931c393, type: 2}
-  - {fileID: 11400000, guid: 2fb442fd722b39e418ba067a188200e6, type: 2}
-  - {fileID: 11400000, guid: abeaba2d32976854dbe3e85c3c6b0720, type: 2}
+  songs: []
+  folderNames:
+  - SongEntry_BGM
 --- !u!1 &2851380614452207270
 GameObject:
   m_ObjectHideFlags: 0
@@ -1473,6 +1464,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingSong: {fileID: 11400000, guid: 3858a7930cb09e84cbcc65dd53954d47, type: 2}
+  audioSource: {fileID: 0}
   playStartingSong: 1
 --- !u!82 &297604980928137708
 AudioSource:
