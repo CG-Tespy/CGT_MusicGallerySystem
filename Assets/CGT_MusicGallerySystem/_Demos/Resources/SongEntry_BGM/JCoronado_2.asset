@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eda98172a6877924fa4f09c7124e8b12, type: 3}
+  m_Name: JCoronado_2
+  m_EditorClassIdentifier: 
+  artists:
+  - Jake Coronado
+  unlockComments: 'OST: RPG Adventure Music Pack'
+  lockComments: Lock comments placeholder here
+  unlockName: Town Theme 2
+  lockName: Lock name placeholder here
+  isLocked: 0
+  audioClip: {fileID: 8300000, guid: 7f4a8aa44d879d24bb4d7ec6629e0536, type: 3}
+  buttonPrefab: {fileID: -9221695842433191230, guid: 85727f792de73524aaa13fd1fe889e3d, type: 3}
