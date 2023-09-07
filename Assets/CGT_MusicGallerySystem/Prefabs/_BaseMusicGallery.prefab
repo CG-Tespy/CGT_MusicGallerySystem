@@ -1464,9 +1464,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bb02cb821fef8e419371c2022a76265, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingSong: {fileID: 11400000, guid: b2b39d5bdc27d0740ae72adde9d3b2fe, type: 2}
+  startingSong: {fileID: 0}
   audioSource: {fileID: 0}
-  playStartingSong: 1
+  playStartingSong: 0
 --- !u!82 &297604980928137708
 AudioSource:
   m_ObjectHideFlags: 0

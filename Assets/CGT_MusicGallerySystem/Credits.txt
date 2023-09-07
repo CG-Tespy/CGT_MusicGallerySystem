@@ -1,11 +1,15 @@
 ~Composers~
 Nid
+Sara Garrard
 
 ~Graphics~
 Blackhammer
 Kronbits
+Vnitti
 
 ~Fonts~
 Tanya Cherkiz
 David Rakowski
 Google
+Peter Wiegel
+Kingthings

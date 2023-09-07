@@ -28,7 +28,6 @@ namespace CGT.MusicGallery
             }
 
             Inst = this;
-            DontDestroyOnLoad(this.transform.root);
             FetchSubmodules();
         }
 
@@ -82,6 +81,8 @@ namespace CGT.MusicGallery
                 songsFound = Resources.LoadAll<SongEntry>(folder);
                 songs.AddRange(songsFound);
             }
+
+            songs.Sort((firstSong, secondSong) => firstSong.OrderInList.CompareTo(secondSong.OrderInList));
         }
 
         protected virtual void InitSubmodules()

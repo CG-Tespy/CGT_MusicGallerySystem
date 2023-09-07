@@ -7,6 +7,9 @@ namespace CGT.MusicGallery
     [CreateAssetMenu(fileName = "NewSongEntry", menuName = "MusicGallery/SongEntry")]
     public class SongEntry : ScriptableObject
     {
+        [Tooltip("Affects how far up the list this will show up. Lower = higher on the list")]
+        [SerializeField] protected int orderInList;
+
         [Tooltip("The names of the people who made the song")]
         [SerializeField] protected string[] artists = new string[] { };
 
@@ -34,6 +37,8 @@ namespace CGT.MusicGallery
         [SerializeField] protected AudioClip audioClip;
         
         [SerializeField] protected SongButtonController buttonPrefab;
+
+        public virtual int OrderInList { get { return orderInList; } }
 
         /// <summary>
         /// The names of those who made the song

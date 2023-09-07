@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eda98172a6877924fa4f09c7124e8b12, type: 3}
   m_Name: WindSphere_2
   m_EditorClassIdentifier: 
+  orderInList: 11
   artists:
   - Windsphere
   unlockComments: Unlock comments placeholder here
