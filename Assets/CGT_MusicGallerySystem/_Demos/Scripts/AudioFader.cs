@@ -23,7 +23,10 @@ public class AudioFader : MonoBehaviour
         if (fadingInProgress)
             return;
 
-        StartCoroutine(FadeProcess(targetVol));
+        if (duration <= 0)
+            toFade.volume = targetVol;
+        else
+            StartCoroutine(FadeProcess(targetVol));
     }
 
     protected bool fadingInProgress;

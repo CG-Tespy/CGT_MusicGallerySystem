@@ -881,7 +881,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toFade: {fileID: 299809561}
-  duration: 0.1
+  duration: 0
   defaultTargetVol: 0.25
   fadeOnAwake: 1
   OnFadeStart:
@@ -1338,7 +1338,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4a09d88c9de03914aac9af59696f1e98, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c7f53f1d37029bb4cbc0a7689eb7a6a8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
