@@ -16,9 +16,9 @@ MonoBehaviour:
   artists:
   - Sara Garrard
   unlockComments: 'OST: Infinity Crisis'
-  lockComments: Lock comments placeholder here
+  lockComments: ???
   unlockName: Rush
-  lockName: Lock name placeholder here
+  lockName: ???
   isLocked: 0
   audioClip: {fileID: 8300000, guid: 12aa26324fa6f654c9310a3724c3f5c6, type: 3}
   buttonPrefab: {fileID: -9221695842433191230, guid: 85727f792de73524aaa13fd1fe889e3d, type: 3}

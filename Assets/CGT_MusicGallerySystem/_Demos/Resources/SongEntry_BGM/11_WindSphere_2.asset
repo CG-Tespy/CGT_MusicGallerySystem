@@ -16,9 +16,9 @@ MonoBehaviour:
   artists:
   - Windsphere
   unlockComments: Unlock comments placeholder here
-  lockComments: Lock comments placeholder here
+  lockComments: ???
   unlockName: Ferruginea
-  lockName: Lock name placeholder here
+  lockName: ???
   isLocked: 0
   audioClip: {fileID: 8300000, guid: 6a0f86b972477cb44b33746d618d07c6, type: 3}
   buttonPrefab: {fileID: -9221695842433191230, guid: 85727f792de73524aaa13fd1fe889e3d, type: 3}

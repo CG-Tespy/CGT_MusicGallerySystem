@@ -15,10 +15,10 @@ MonoBehaviour:
   orderInList: 2
   artists:
   - Nid
-  unlockComments: Unlock comments placeholder here
-  lockComments: Lock comments placeholder here
+  unlockComments: This track is intended to be played in an RPG field.
+  lockComments: ???
   unlockName: The Ancient Land
-  lockName: Lock name placeholder here
+  lockName: ???
   isLocked: 0
   audioClip: {fileID: 8300000, guid: cdbafdbb0c8a80c4693b52e4c60572ea, type: 3}
   buttonPrefab: {fileID: -9221695842433191230, guid: 85727f792de73524aaa13fd1fe889e3d, type: 3}

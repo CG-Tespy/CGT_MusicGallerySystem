@@ -16,11 +16,11 @@ MonoBehaviour:
   artists:
   - Sara Garrard
   unlockComments: 'OST: Infinity Crisis'
-  lockComments: Lock comments placeholder here
+  lockComments: ???
   unlockName: 'Now is the Cherry
 
     in Blossom'
-  lockName: Lock name placeholder here
+  lockName: ???
   isLocked: 0
   audioClip: {fileID: 8300000, guid: 83209cbcb6f155443bf97b644ac90454, type: 3}
   buttonPrefab: {fileID: -9221695842433191230, guid: 85727f792de73524aaa13fd1fe889e3d, type: 3}

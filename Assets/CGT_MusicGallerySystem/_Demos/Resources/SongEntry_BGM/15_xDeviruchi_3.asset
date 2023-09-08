@@ -16,9 +16,9 @@ MonoBehaviour:
   artists:
   - xDeviruchi
   unlockComments: 'OST: 8-Bit Fantasy Music Pack'
-  lockComments: Lock comments placeholder here
+  lockComments: ???
   unlockName: Prepare For Battle!
-  lockName: Lock name placeholder here
+  lockName: ???
   isLocked: 0
   audioClip: {fileID: 8300000, guid: bd4a335d116afed4092bdac38d6edfd3, type: 3}
   buttonPrefab: {fileID: -9221695842433191230, guid: 85727f792de73524aaa13fd1fe889e3d, type: 3}

@@ -16,9 +16,9 @@ MonoBehaviour:
   artists:
   - Jake Coronado
   unlockComments: 'OST: RPG Adventure Music Pack'
-  lockComments: Lock comments placeholder here
+  lockComments: ???
   unlockName: Town Theme 2
-  lockName: Lock name placeholder here
+  lockName: ???
   isLocked: 0
   audioClip: {fileID: 8300000, guid: 7f4a8aa44d879d24bb4d7ec6629e0536, type: 3}
   buttonPrefab: {fileID: -9221695842433191230, guid: 85727f792de73524aaa13fd1fe889e3d, type: 3}
