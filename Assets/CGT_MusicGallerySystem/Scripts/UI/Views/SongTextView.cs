@@ -14,9 +14,15 @@ namespace CGT.MusicGallery
     {
         [SerializeField] protected TextMeshProUGUI textField;
         [SerializeField] protected SongInfoType whatToDisplay = SongInfoType.Null;
-        [SerializeField] protected bool ignoreNewlines;
+        [SerializeField] protected bool removeNewlines;
         
         public virtual SongInfoType WhatToDisplay { get { return whatToDisplay; } }
+
+        protected virtual void Awake()
+        {
+            if (textField == null)
+                textField = GetComponent<TextMeshProUGUI>();
+        }
 
         public override void Refresh()
         {
@@ -56,17 +62,17 @@ namespace CGT.MusicGallery
 
         protected virtual string ArtistNamesFormatted()
         {
-            stringBuilder.Clear();
+            var artists = Song.Artists;
+            if (artists.Count <= 0)
+                return "";
 
-            IList<string> artists = Song.Artists;
-            for (int i = 0; i < artists.Count; i++)
+            stringBuilder.Clear();
+            stringBuilder.Append(artists[0]);
+
+            for (int i = 1; i < artists.Count; i++)
             {
                 string artistName = artists[i];
-                stringBuilder.Append($"{artistName}");
-
-                bool atLastName = i == artists.Count - 1;
-                if (!atLastName)
-                    stringBuilder.Append(", "); // Can't have a comma as the last char, after all
+                stringBuilder.Append($", {artistName}");
             }
 
             string formatted = stringBuilder.ToString();
@@ -92,7 +98,7 @@ namespace CGT.MusicGallery
         
         protected virtual void RemoveNewlinesAsNeeded()
         {
-            if (!ignoreNewlines)
+            if (!removeNewlines)
                 return;
 
             // Can't just iterate over the dictionary; in Unity, it doesn't support ElementAt(num).

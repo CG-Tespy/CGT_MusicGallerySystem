@@ -32,7 +32,7 @@ namespace CGT.MusicGallery
                 MusicGallery.OnMusicPlay += SetTheViews;
         }
 
-        protected virtual MusicGallery MusicGallery { get { return MusicGallery.Inst; } }
+        protected virtual MusicGalleryManager MusicGallery { get { return MusicGalleryManager.Inst; } }
 
         protected virtual void SetTheViews(MusicPlayArgs args)
         {
