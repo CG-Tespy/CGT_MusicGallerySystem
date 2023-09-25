@@ -24,5 +24,5 @@ MonoBehaviour:
   lockComments: ???
   unlockName: "\u601D\u3044\u51FA (Memories)"
   lockName: ???
-  audioClip: {fileID: 8300000, guid: 2f1b39913e434894e89321ecdaf2f33b, type: 3}
+  audioClip: {fileID: 8300000, guid: 64ec02f496e7f7a469869f3fd353b383, type: 3}
   buttonPrefab: {fileID: -9221695842433191230, guid: 85727f792de73524aaa13fd1fe889e3d, type: 3}

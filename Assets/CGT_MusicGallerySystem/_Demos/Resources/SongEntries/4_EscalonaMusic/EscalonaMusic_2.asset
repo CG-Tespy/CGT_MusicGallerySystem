@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eda98172a6877924fa4f09c7124e8b12, type: 3}
   m_Name: EscalonaMusic_2
   m_EditorClassIdentifier: 
+  isLocked: 0
   orderInList: 11
   artists:
   - Escalona Music
@@ -22,6 +23,5 @@ MonoBehaviour:
   lockComments: ???
   unlockName: Desert
   lockName: ???
-  isLocked: 0
-  audioClip: {fileID: 8300000, guid: 27f6c56ec1f12bc4184ebf5783462b86, type: 3}
+  audioClip: {fileID: 8300000, guid: b8bbd6318e3b4f14e8b2ce13007caa5e, type: 3}
   buttonPrefab: {fileID: -9221695842433191230, guid: 85727f792de73524aaa13fd1fe889e3d, type: 3}
