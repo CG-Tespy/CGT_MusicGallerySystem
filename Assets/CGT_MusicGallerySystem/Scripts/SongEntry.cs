@@ -7,6 +7,8 @@ namespace CGT.MusicGallery
     [CreateAssetMenu(fileName = "NewSongEntry", menuName = "MusicGallery/SongEntry")]
     public class SongEntry : ScriptableObject
     {
+        [SerializeField] protected bool isLocked;
+
         [Tooltip("Affects how far up the list this will show up. Lower = higher on the list")]
         [SerializeField] protected int orderInList;
 
@@ -21,7 +23,7 @@ namespace CGT.MusicGallery
 
         [Tooltip("Comments for when this is locked")]
         [TextArea(3, 10)]
-        [SerializeField] protected string lockComments = string.Empty;
+        [SerializeField] protected string lockComments = "???";
 
         [Header("Display Names")]
 
@@ -31,9 +33,8 @@ namespace CGT.MusicGallery
 
         [Tooltip("Name shown when locked")]
         [TextArea(1, 6)]
-        [SerializeField] protected string lockName = string.Empty;
+        [SerializeField] protected string lockName = "???";
 
-        [SerializeField] protected bool isLocked;
         [SerializeField] protected AudioClip audioClip;
         
         [SerializeField] protected SongButtonController buttonPrefab;
