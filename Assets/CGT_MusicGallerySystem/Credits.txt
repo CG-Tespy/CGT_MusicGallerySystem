@@ -1,6 +1,9 @@
 ~Composers~
 Nid
 Sara Garrard
+JDSherbert
+Escalona Music
+WindSphere
 
 ~Graphics~
 Blackhammer
