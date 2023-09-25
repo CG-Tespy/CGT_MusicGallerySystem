@@ -73,3 +73,7 @@ crashlytics-build.properties
 
 # WIP Documentation Files
 /[Aa]ssets/_[Dd]ocs/*
+
+# Builds
+/[Aa]ssets/_Builds/*
+/[Aa]ssets/Builds/*
